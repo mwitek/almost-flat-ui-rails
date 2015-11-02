@@ -15,10 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.require_paths = ["lib"]
-  
-  spec.add_dependency 'foundation-rails', "~> 5.5.3.2"
-  spec.add_dependency 'sass-rails'
-  spec.add_dependency 'compass-rails'
+
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end
