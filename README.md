@@ -1,24 +1,36 @@
-# Almost::Flat::Ui::Rails
+# almost-flat-ui-rails
+#### [Almost-flat-ui](https://github.com/websymphony/almost-flat-ui) foundation theme bundled for the rails assets pipeline.
 
-TODO: Write a gem description
+#### [Demo](http://websymphony.net/almost-flat-ui/)
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'almost-flat-ui-rails'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install almost-flat-ui-rails
+  almost-flat-ui-rails requires:
+  [`foundation-rails`](https://github.com/zurb/foundation-rails),
+  [`sass-rails`](https://github.com/rails/sass-rails), and
+  [`compass-rails`](https://github.com/compass/compass-rails)
+  
+  Add the following to your application's Gemfile:
+  
+  `gem 'sass-rails', '~> 5.0'`
+  
+  `gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'`
+  
+  `gem 'foundation-rails', '~> 5.5.3.2'`
+  
+  `gem 'almost-flat-ui-rails'`
 
 ## Usage
+This gem requires that the css manifest is an scss file.
 
-TODO: Write usage instructions here
+Add `@import "almost_flat_ui";` to `stylesheets/application.scss`.
+
+Make sure this is added after the foundation import, for example:
+
+within... app/assets/stylesheets/application.scss
+```
+  @import "foundation";
+  @import "almost_flat_ui";
+```
 
 ## Contributing
 
